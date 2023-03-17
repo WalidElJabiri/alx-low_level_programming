@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 /**
  * main - printing a random num and printing weither the num is positive or negative
  *
@@ -9,7 +10,7 @@ int main(void)
 {
 	int n;
 
-	srand(time(NULL));
+	srand(time(0));
 	n = rand();
 	if (n > 0)
 	{
