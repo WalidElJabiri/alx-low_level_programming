@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - printing a random num and printing weither the num is positive or negative
+ * main - printing a random num and printing weither is positive or negative
  *
  * Return: 0 (Succes)
  */
@@ -11,7 +11,7 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand();
+	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
