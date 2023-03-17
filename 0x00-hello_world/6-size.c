@@ -1,4 +1,4 @@
-# include <stdio.h>
+#include <stdio.h>
 
 /**
  * printf - printing the size of various types on the computer it is compiled and run on.
