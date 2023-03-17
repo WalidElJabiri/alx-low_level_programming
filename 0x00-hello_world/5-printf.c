@@ -1,6 +1,6 @@
-# include<stdio.h>
+#include <stdio.h>
 /*
- * printf() - print a string using print function
+ * printf() - Print a string using print function
  * Return: 0
  */
 
