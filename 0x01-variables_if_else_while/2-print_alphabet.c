@@ -5,6 +5,7 @@
  * main - Printing alphabets using putchar
  *
  * Return: always 0 (succes)
+ *
  */
 int main(void)
 {
