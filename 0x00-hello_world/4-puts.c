@@ -1,8 +1,9 @@
 # include<stdio.h>
 /**
- * using puts() to print out a string
+ * puts() - using puts() to print out a string
  * return 0
  */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
