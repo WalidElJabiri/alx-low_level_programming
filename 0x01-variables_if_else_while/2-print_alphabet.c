@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/*
+/**
  * main - prints the alphabet in lowercase.
  *
  * Return: always 0 (succes)
- *
  */
 int main(void)
 {
