@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - Print a string using printf() function
- *
+ * main - Printing a string using printf() function
  * Return: 0 (succes)
  */
 
