@@ -7,6 +7,13 @@
  */
 int _islower(int c)
 {
+	c = 'H';
+	c = '0';
+	c = 'o';
+	c = 'c';
+	c = 'I';
+	c = 's';
+
 	if(_islower(c))
 	{
 		return (1);
