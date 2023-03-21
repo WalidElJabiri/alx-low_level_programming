@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
  * main - printing _putchar, followed by a new line
- * return: 0 (succes)
+ *
+ * Return: 0 (Succes)
  */
 int main(void)
 {
