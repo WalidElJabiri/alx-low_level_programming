@@ -1,20 +1,13 @@
 #include "main.h"
 
 /**
- * _islower - check if char is lower
+ * _islower - check if int is lower
  *
- * Return: 1 if lower else is 0
+ * Return: 1 if lower, else 0
  */
 int _islower(int c)
 {
-	c = 'H';
-	c = '0';
-	c = 'o';
-	c = 'c';
-	c = 'I';
-	c = 's';
-
-	if(_islower(c))
+	if(c >= 97 && c <= 122)
 	{
 		return (1);
 	}
