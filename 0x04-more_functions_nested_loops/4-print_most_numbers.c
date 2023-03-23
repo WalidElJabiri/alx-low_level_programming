@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - print numbers from 0 to 9
+ * print_most_numbers - print numbers from 0 to 9
  * Return: void
  */
 void print_most_numbers(void)
@@ -10,9 +10,13 @@ void print_most_numbers(void)
 
 	for (i = 48; i < 58; i++)
 	{
-		while (i != 50 && i != 52)
+		if (i != 50 || i != 52)
 		{
-			_putchar(i);
+			continue;
+		}
+		else
+		{
+			_putchar(i + '0');
 		}
 	}
 	_putchar('\n');
