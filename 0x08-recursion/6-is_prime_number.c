@@ -22,11 +22,11 @@ int pr(int n, int i)
 	return (pr(n, i + 1));
 }
 /**
- * is_prime_number -  returns 1 if the input integer is prime otherwise return 0
+ * is_prime_number -  returns 1 if input integer is prime otherwise return 0
  * @n: the num
  * Return: 1 if the input integer is prime otherwise return 0
  */
 int is_prime_number(int n)
 {
-	return (pr(n,1));
+	return (pr(n, 1));
 }
