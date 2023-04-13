@@ -9,8 +9,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *s
-	unsigned int a = 0, b = 0, c = 0, d;
+	unsigned int a = 0, b = 0, c = 0, d = 0;
+	char *s;
 
 	if (s1 == NULL)
 	{
@@ -48,7 +48,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			s[d] = s1[d];
 		}
-		else if (d >= a)
+		if (d >= a)
 		{
 			s[d] = s2[b];
 			b++;
