@@ -1,5 +1,4 @@
 #ifndef dog
-#define dog
 /**
  * struct dog - a structure called dog
  * @name: name of the dog
