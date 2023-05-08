@@ -1,4 +1,8 @@
 #include <stdlib.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * read_textfile - function that reads a text file
@@ -22,7 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	op = open(filename, O_RDONLY);
-	rd = read(o, buff, letters);
+	rd = read(op, buff, letters);
 	wr = write(STDOUT_FILENO, buff, rd);
 	if (op == -1 || rd == -1 || wr == -1 || wr != rd)
 	{
