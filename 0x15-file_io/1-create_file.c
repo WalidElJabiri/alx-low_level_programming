@@ -1,8 +1,9 @@
 #include "main.h"
-#include <errno.h>
 #include <fcntl.h>
-#include <stdio.h>
 #include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <stddef.h>
 /**
  * create_file - function that creates a file
  * @filename: the name of the file to create
@@ -24,7 +25,7 @@ int create_file(const char *filename, char *text_content)
 			i++;
 		}
 	}
-	op = open(filename O_CREAT | O_POWR | O_TRUNC, 0600);
+	op = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	wr = write(op, text_content, i);
 	if (op == -1 || wr == -1)
 	{
