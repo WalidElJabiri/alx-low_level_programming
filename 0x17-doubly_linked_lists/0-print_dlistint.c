@@ -1,24 +1,29 @@
-#include <stdlib.h>
-#include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * print_dlistint - prints all the elements of a dlistint_t list.
+ * dlistint_len - returns the number of elements in a linked list.
  * @dlistint_t: doubly linked list
- * @h: hea
+ * @h: head
  * Return: num of elements
  */
-size_t print_dlistint(const dlistint_t *h)
-{
-	dlistint_t const *p;
-	int i = 1;
+size_t print_dlistint(const dlistint_t *h){
+        int i = 0;
 
-	if (h == NULL)
-		return 0;
-	else
-		for(p = h; p != NULL; p = p->next)
-			printf("%d\n", p->n);
-			i += 1;
-			return i;
+        if (h == NULL)
+                return 0;
+        else
+        {
+            while (h->prev != NULL)
+            {
+                h = h->prev;
+            }
+            while (h != NULL)
+            {
+                printf("%d\n", h->n);
+                h = h->next;
+                i++;
+                
+            }
+            return i;
+        }
 }
