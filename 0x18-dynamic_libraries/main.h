@@ -1,5 +1,5 @@
-#define _HEAD_
-#ifndef _HEAD_
+#define _head_
+#ifndef _head_
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
