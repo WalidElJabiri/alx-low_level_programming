@@ -1,14 +1,18 @@
 #include "main.h"
 /**
- * _puts - print a string
- * @str: the var containing string
- * Return: void
+ * _puts - prints an entire str
+ * @str: string
+ * Return: 0.
  */
 void _puts(char *str)
 {
-	while (*str != '\0')
+	int i;
+
+	i = 0;
+	while (*(str + i) != '\0')
 	{
-		_putchar(*str++);
+		_putchar(*(str + i));
+		i++;
 	}
-		_putchar('\n');
+	_putchar('\n');
 }

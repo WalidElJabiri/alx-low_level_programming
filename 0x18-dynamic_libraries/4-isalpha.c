@@ -1,13 +1,12 @@
 #include "main.h"
-
 /**
- * _isalpha - check if int is lower
- * @c: the int that will be checked
- * Return: 1 if lower, else 0
+ * _isalpha - check letters
+ * @c: char to check
+ * Return: 1 if success
  */
 int _isalpha(int c)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
 		return (1);
 	}
